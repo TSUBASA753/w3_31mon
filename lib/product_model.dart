@@ -4,6 +4,7 @@ class Product {
   final String photo ;
   final String price ;
   final String description ;
+  final int weight ;
 
 
   Product({
@@ -12,6 +13,7 @@ class Product {
     required this.photo,
     required this.price,
     required this.description,
+    required this.weight,
 });
 
   factory Product.fromJson(Map<String, dynamic> json) {
@@ -21,6 +23,7 @@ class Product {
       photo: json['photo'],
       price: json['price'],
       description: json['description'],
+      weight: json['weight'],
     );
 
   }
